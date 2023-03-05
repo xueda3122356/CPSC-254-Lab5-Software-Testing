@@ -7,3 +7,10 @@ test case #1 - procedure_Primary:
         maximum amount of elements a vector<token_323> can have. The maximum 
         amount of elements the vector can have is 192153584101141162 which 
         the input exceeded by 1. 
+       
+test case #2 - procedure_primary:
+    results:
+    	The test passed since the program will crash as expecetd 
+    why?: 
+    	Program will crash not due to the procedure_Primary function but due to the lexical analyzer.
+    	Since the long data type is treated as one token. 

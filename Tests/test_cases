@@ -3,3 +3,9 @@ test case #1 - procedure_Primary:
          A vector of token_323 objects with 192153584101141163 elements, 5
     expected output: 
         The program will crash since it will exceed tha amount of elements a vector<token_323> can have.
+        
+test case #2 - procedure_Primary 
+    input:
+    	A math operation involving a long data type over its representation value plus any other number 
+    expected output:
+    	The program will crash since it will exceed the amount of bits in a 64-bit sysytem 
