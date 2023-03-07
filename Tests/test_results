@@ -14,3 +14,10 @@ test case #2 - procedure_primary:
     why?: 
     	Program will crash not due to the procedure_Primary function but due to the lexical analyzer.
     	Since the long data type is treated as one token. 
+        
+test case #3 - procedure_Print
+    results:
+       Parts of the string was missing. Depending on where it was placed the rest of the string would be voided out 
+    why?:
+        Program will not crash because \0 is a valid string but it is also a nullptr. Therefore, anything after \0 is 
+        voided. A minor flaw that doesn't cause fatal errors but can feed compiler incorrect information. 
