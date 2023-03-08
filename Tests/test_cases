@@ -27,3 +27,17 @@ test case #4 - Arithmetic Exception
     	The program should crash because division by 0 is not allowed because infinity, the theoretical answer
     	is not possible for a computer to store or compute. Even 0/0 shouldn't be allowed because it is logically
     	different to 0.
+test case#5
+    Input: 
+	    A vector of token_323 objects: vector<token_323> = {"if", "a", "<=", "b", "(", ")", "a=b", "fi", "else", "b=a"}
+
+    Expected Output:
+	    Here, we test if statement, the procedure_If function will return true.
+
+
+test case#6
+    Input: 
+	    A vector of token_323 objects: vector<token_323> = {"while", "a", "<=", "b", "(", ")", "a=b", "a=a+1"}
+
+    Expected Output:
+	    Here, we test while statement, the procedure_while function will return true.
