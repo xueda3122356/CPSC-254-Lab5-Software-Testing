@@ -15,3 +15,15 @@ test case #3 - procedure_Print
         Within vector<string> a part of the string will have \0(null pointer) that terminates the program/stops current function 
     expected output:
         The program will still run but there will be chuncks of the string that will be missing 
+
+test case #4 - Arithmetic Exception
+    input:
+    	Any math operation that involves division by zero.
+    		Ex:
+    			int x = 9/0;
+    			int x = 0/0;
+    			int x = y;     // where y is n/0 where n is != 0
+    expected output:
+    	The program should crash because division by 0 is not allowed because infinity, the theoretical answer
+    	is not possible for a computer to store or compute. Even 0/0 shouldn't be allowed because it is logically
+    	different to 0.

@@ -21,3 +21,10 @@ test case #3 - procedure_Print
     why?:
         Program will not crash because \0 is a valid string but it is also a nullptr. Therefore, anything after \0 is 
         voided. A minor flaw that doesn't cause fatal errors but can feed compiler incorrect information. 
+        
+test case #4 - Arithmetic Exception:
+    results:
+    	The program will crash and give a "division_by_zero" error during compile time.
+    why?:
+    	A number cannot be divided by zero unless the divisor is 0 because otherwise the answer would be infinity and 
+    	there is no way for infinity to be computed.
