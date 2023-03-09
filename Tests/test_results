@@ -61,3 +61,36 @@ test case #5 - procedure_Parameter
         This makes the declaration appear true even though it should be false due to a type
         mismatch.
         
+
+Test case #9- R24:
+Test Result:
+procedure_Relop should recognize the input token as a valid relational operator and generate the appropriate instruction for the NEQ operator. The function should also update rule_holder and return true. No errors or issues should be encountered.
+
+Problem:
+None found.
+
+Test case #10- R25:
+
+Test Result:
+procedure_Term should recognize the input token as a valid factor and return true. procedure_Expression_q should recognize the lack of a leading + or - symbol as a valid case and update rule_holder before returning true. No errors or issues should be encountered.
+
+Problem:
+None found.
+
+
+Test case #11- R25.1:
+
+Test Result:
+procedure_Expression_q should recognize the + symbol and call procedure_Term and procedure_Expression_q to handle the remaining integer literal. The function should generate the appropriate instruction for the ADD operator and update rule_holder before returning true. No errors or issues should be encountered.
+
+Problem:
+None found.
+
+
+Test case #12- R26: 
+
+Test Result:
+procedure_Factor should recognize the input token as a valid factor and return true. procedure_Term_q should recognize the lack of a trailing factor and update rule_holder before returning true. No errors or issues should be encountered.
+
+Problem:
+None found.

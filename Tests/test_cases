@@ -57,3 +57,35 @@ Test case #8 R12. <Declaration> -> <Qualifier= "int"> <IDs ="x=5.5">
         Make a declaration of int to "int x = 5.5"
     output:
         The result will print out int as 5.
+
+Test Case #9- R24:
+
+Input:
+Create a vector of tokens with a single token representing the "==" relational operator, and call the procedure_Relop function with this vector and an initial loc value of 0.
+
+Output:
+The procedure_Relop function should update the all_instructions vector with a new instruction to perform an "EQU" operation and update the rule_holder vector with a string describing the production rule used. The function should return true to indicate that the input token was recognized as a valid relational operator. The final value of loc should be 1 to indicate that the function has processed the single input token.
+
+Test case #10- R25: 
+      
+Input:
+Create a vector of tokens with a single integer literal, and call procedure_Expression with loc set to 0.
+
+Output:
+procedure_Expression should call procedure_Term and procedure_Expression_q to process the input token and any additional terms in the expression. If both functions return true, the function should update rule_holder and return true. If either function returns false, procedure_Expression should return false and print an error message. The final value of loc should be 1.
+
+Test case #11- R25.1:
+
+Input:
+Create a vector of tokens with one or more terms, and call the procedure_Expression_q function with an initial loc value of 0.
+
+Output:
+procedure_Expression_q should recognize any leading + or - symbol followed by a term, generate the appropriate instruction, update rule_holder, and return true. If no symbol is found, rule_holder should be updated and the function should return true. If either procedure_Term or procedure_Expression_q return false, procedure_Expression_q should return false and print an error message. The final value of loc should be the index of the last processed token plus one.
+
+Test case #12- R26:
+
+Input:
+Create a vector of tokens with one or more factors, and call procedure_Term with loc set to 0.
+
+Output:
+procedure_Term should call procedure_Factor and procedure_Term_q to process the input token(s) and any additional factors in the term. If both functions return true, procedure_Term should update rule_holder and return true. If either function returns false, procedure_Term should return false and print an error message. The final value of loc should be the index of the last processed token plus one.
