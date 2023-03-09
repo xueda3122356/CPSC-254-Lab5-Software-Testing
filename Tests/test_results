@@ -22,12 +22,11 @@ test case #3 - procedure_Print
         Program will not crash because \0 is a valid string but it is also a nullptr. Therefore, anything after \0 is 
         voided. A minor flaw that doesn't cause fatal errors but can feed compiler incorrect information. 
         
-test case #4 - Arithmetic Exception:
+test case #4 - R8
     results:
-    	The program will crash and give a "division_by_zero" error during compile time.
+    	Program will crash if a char is declared as char are not recognized as qualifiers which are part of the declaration process.
     why?:
-    	A number cannot be divided by zero unless the divisor is 0 because otherwise the answer would be infinity and 
-    	there is no way for infinity to be computed.
+    	This test is sufficient to identify that though int, booleans, and real are qualifiers, char is not a qualifer but should be.
 
 test case #5 - procedure_Parameter
     results:
@@ -94,3 +93,16 @@ procedure_Factor should recognize the input token as a valid factor and return t
 
 Problem:
 None found.
+
+Test case #13 - R9 
+   result:
+   	The program crashes due to a missing '}' or no '{' in the first place.
+   why?:
+   	This tests scenarios in which the lexer should have output an error.
+   	
+ Test case #14- R10
+   result:
+   	The program would run fine and there are no errors triggerable since declaration lists are optional
+   Why?:
+   	A program only requires parameters to be declared, other variables aren't required.
+       
