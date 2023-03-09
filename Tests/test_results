@@ -52,4 +52,12 @@ test case #5 - procedure_Parameter
        This is because even though it should be true, The value of x and y may not be exactly equal
        to 0.1 and 0.2 due to floating-point arithmetic which can cause a slight rounding error.
        So the adding resulted in a slightly different answer from 0.3 causing the condition to be false
-       
+    
+ Test case #8 R12. <Declaration> -> <Qualifier= "int"> <IDs ="x=5.5">
+    result:
+        The program did not crash but produced 5 as the result for x
+    why:
+        The value 5.5 is converted to an integer before it is assined to the variable x.
+        This makes the declaration appear true even though it should be false due to a type
+        mismatch.
+        
