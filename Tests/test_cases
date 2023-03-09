@@ -10,7 +10,7 @@ test case #2 - procedure_Primary
     expected output:
     	The program will crash since it will exceed the amount of bits in a 64-bit sysytem 
   
-test case #3 - procedure_Print
+test case #3 - R20. <print> -> put(<"this \0 is a string">)
     input:
         Within vector<string> a part of the string will have \0(null pointer) that terminates the program/stops current function 
     expected output:
