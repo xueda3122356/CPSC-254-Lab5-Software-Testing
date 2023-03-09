@@ -39,3 +39,16 @@ Test case #6 - R19.<Return> -> return; | return <0/1>;
         Passing 0/1 as a return expression
     output:
         The system will crash and throw a ZeroDivisionError since 0/1 is a invalid operation
+        
+Test case #7 - R23. <Condition> -> <Expression "x">  <Relop "==">   <Expression"0.3">
+   input:
+       set x as the value of 
+       double a = 0.1;
+       double b = 0.2;
+       double x = a+b;
+       if (x == 0.3)
+       {
+       //code block
+       }
+   output:
+        The code may return false or true. It is not guaranteed for either
