@@ -52,3 +52,8 @@ Test case #7 - R23. <Condition> -> <Expression "x">  <Relop "==">   <Expression"
        }
    output:
         The code may return false or true. It is not guaranteed for either
+Test case #8 R12. <Declaration> -> <Qualifier= "int"> <IDs ="x=5.5">
+    input:
+        Make a declaration of int to "int x = 5.5"
+    output:
+        The result will print out int as 5.
