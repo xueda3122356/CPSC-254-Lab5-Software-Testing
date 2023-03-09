@@ -33,3 +33,9 @@ test case #5 - procedure_Parameter
         Passing in a negative number value as a parameter in the a function like sqrt().
     expected output:
         The program will crash and throw and exeption as a negative number is out of the domain of the sqrt() parameter. 
+
+Test case #6 - R19.<Return> -> return; | return <0/1>;
+    input:
+        Passing 0/1 as a return expression
+    output:
+        The system will crash and throw a ZeroDivisionError since 0/1 is a invalid operation
