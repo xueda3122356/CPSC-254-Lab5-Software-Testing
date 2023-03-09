@@ -37,3 +37,10 @@ test case #5 - procedure_Parameter
         Becuase sqrt() has a mathematical domain it is restriced to using only postive numbers.
         If a negative number is inputed the output will just be the maximum negative number for an int.
         Instead of throwing an exeption error and crashing.  
+        
+ Test case #6 - R19.<Return> -> return; | return <0/1>;
+  result:
+    The program did crash due to the operation being invalid 
+  why:
+    Divding by zero is an invalid operation, it raises a "zerodivisionError" which then causes
+    the program to crash 
