@@ -28,3 +28,9 @@ test case #4 - Arithmetic Exception:
     why?:
     	A number cannot be divided by zero unless the divisor is 0 because otherwise the answer would be infinity and 
     	there is no way for infinity to be computed.
+
+test case #5 - procedure_Parameter
+    results:
+        The program did not crash, meaning it returns 1 instead of 0 as a negative int does not quilify as a fatal error, but in the paramter of sqrt(). 
+    why:
+        Becuase sqrt() has a mathematical domain it is restriced to using only postive numbers,but if a negative number is inputed the output will just be the maximum negative number for an int, instead of throwing an exeption error and crashing.  

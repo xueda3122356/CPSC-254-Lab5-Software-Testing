@@ -27,3 +27,9 @@ test case #4 - Arithmetic Exception
     	The program should crash because division by 0 is not allowed because infinity, the theoretical answer
     	is not possible for a computer to store or compute. Even 0/0 shouldn't be allowed because it is logically
     	different to 0.
+
+test case #5 - procedure_Parameter
+    input:
+        Passing in a negative number value as a parameter in the a function like sqrt().
+    expected output:
+        The program will crash and throw and exeption as a negative number is out of the domain of the sqrt() parameter. 
